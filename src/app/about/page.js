@@ -19,7 +19,7 @@ export default function About() {
           <div>
             <Image
               src="/content/pages/2015/10/about/images/muralleveled.jpg"
-              alt="Dave Clayton at his studio"
+              alt="Natural Selection Mural by Bret Seyfert"
               width={500}
               height={300}
               className="rounded-lg shadow-lg"
@@ -31,7 +31,7 @@ export default function About() {
               Natural Selection was created by Dave Clayton in October 2003, and has remained an outlet for his passion for music.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              With over 20 years of experience, Dave is a renaissance man in the music industry, adept at DJing, producing, live performance, mastering, acoustical design, and enjoys sharing his knowledge and mentoring others.
+              With 28 years of indstry experience, Dave is a renaissance man in the music industry who is adept at DJing, producing, live performance, mastering, acoustical design, and enjoys sharing his knowledge and mentoring others.
             </p>
             <p className="text-lg text-gray-700">
               His underground moniker, Clayton the Chemist, features vibes that run the gamut of House, Bass Music, Drum & Bass, Nu Funk, Nu Jazz, and Nu Soul.
@@ -59,7 +59,7 @@ export default function About() {
                   <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM15.657 6.343a1 1 0 011.414 0A9.972 9.972 0 0119 12a9.972 9.972 0 01-1.929 5.657 1 1 0 11-1.414-1.414A7.971 7.971 0 0017 12c0-2.21-.896-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 12a5.983 5.983 0 01-.757 2.829 1 1 0 11-1.415-1.415A3.987 3.987 0 0014 12a3.987 3.987 0 00-1.172-2.829 1 1 0 010-1.414z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Sound System & Lighting</h3>
+              <h3 className="text-xl font-semibold mb-2">DJ Sound System & Lighting</h3>
               <p className="text-gray-600">Professional audio and visual equipment</p>
             </div>
             
@@ -90,11 +90,11 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Experience & Expertise</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-4xl font-bold text-black mb-2">20+</div>
+              <div className="text-4xl font-bold text-black mb-2">28</div>
               <div className="text-lg text-gray-600">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-black mb-2">1000+</div>
+              <div className="text-4xl font-bold text-black mb-2">100+</div>
               <div className="text-lg text-gray-600">Events Completed</div>
             </div>
             <div>
@@ -108,7 +108,7 @@ export default function About() {
         <div className="bg-black text-white rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Make Your Event Unforgettable?</h2>
           <p className="text-lg text-gray-300 mb-6">
-            Let's discuss how Natural Selection can bring the perfect sound to your next event.
+            Let's discuss how Natural Selection Deejaying can bring the perfect sound to your next event.
           </p>
           <a 
             href="/contact" 

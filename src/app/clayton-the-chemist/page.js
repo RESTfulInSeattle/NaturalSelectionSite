@@ -9,7 +9,7 @@ export default function ClaytonTheChemist() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Clayton the Chemist</h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Underground Electronic Music Producer & DJ
+            roducer & DJ
           </p>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             House • Bass Music • Drum & Bass • Nu Funk • Nu Jazz • Nu Soul
