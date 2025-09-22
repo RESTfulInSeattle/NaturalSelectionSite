@@ -1,103 +1,232 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <div className="bg-black text-white py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              className="mx-auto mb-8"
+              src="/content/images/ns-deejaying_header_white.png"
+              alt="Natural Selection Deejaying"
+              width={550}
+              height={94}
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">
+              A great DJ plays the right song at the right time
+            </h1>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
+              No event and crowd are the same. You need a seasoned professional to both keep the event on schedule, 
+              and the crowd entertained with music that speaks to them.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/contact" 
+                className="inline-block bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+              >
+                Get Quote
+              </Link>
+              <a 
+                href="tel:206-851-0003" 
+                className="inline-block border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors duration-200"
+              >
+                📞 206-851-0003
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Experience Banner */}
+      <div className="bg-gray-900 text-white py-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="text-3xl font-bold mb-2">20+</div>
+              <div className="text-gray-300">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">1000+</div>
+              <div className="text-gray-300">Events Completed</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">100%</div>
+              <div className="text-gray-300">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      <div className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From DJing unforgettable events to professional audio mastering, 
+              Natural Selection brings expertise across the entire music spectrum.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* DJ Services */}
+            <Link href="/dj-services" className="group">
+              <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+                <div className="bg-black text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-800 transition-colors">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.369 4.369 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">DJ Services</h3>
+                <p className="text-gray-600 text-sm">Professional event DJing for weddings, corporate events, and entertainment</p>
+              </div>
+            </Link>
+
+            {/* Audio Mastering */}
+            <Link href="/mastering" className="group">
+              <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+                <div className="bg-black text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-800 transition-colors">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">Audio Mastering</h3>
+                <p className="text-gray-600 text-sm">Professional mastering services to make your music sound its best</p>
+              </div>
+            </Link>
+
+            {/* Music Production */}
+            <Link href="/music" className="group">
+              <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+                <div className="bg-black text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-800 transition-colors">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">Music & Production</h3>
+                <p className="text-gray-600 text-sm">Original music composition and production for media and licensing</p>
+              </div>
+            </Link>
+
+            {/* Consultation */}
+            <Link href="/about" className="group">
+              <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+                <div className="bg-black text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-800 transition-colors">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">Consultation</h3>
+                <p className="text-gray-600 text-sm">Acoustical consultation and studio design expertise</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* About Dave Section */}
+      <div className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Meet Dave Clayton</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                With 20 years of experience in playing everything from nightclubs, weddings, corporate events, 
+                fundraisers, lounges, casinos, and Outdoor Races, Dave Clayton has the experience and passion 
+                to make your event a success!
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                A renaissance man in the music industry, Dave is also known as "Clayton the Chemist" in the 
+                underground music scene, producing music across House, Bass Music, Drum & Bass, Nu Funk, Nu Jazz, and Nu Soul.
+              </p>
+              <Link 
+                href="/about" 
+                className="inline-block bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200"
+              >
+                Learn More About Dave
+              </Link>
+            </div>
+            <div className="text-center">
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <div className="text-6xl mb-4">🎵</div>
+                <h3 className="text-xl font-semibold mb-2">Natural Selection</h3>
+                <p className="text-gray-600">Est. October 2003</p>
+                <p className="text-sm text-gray-500 mt-4">Seattle, WA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Equipment & Capabilities */}
+      <div className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Professional Equipment</h2>
+            <p className="text-lg text-gray-600">Sound and lighting that can be scaled to your venue size and requirements</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 flex items-center">
+                <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clipRule="evenodd"/>
+                </svg>
+                Audio Systems
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>• 2 Simultaneous wireless microphones</li>
+                <li>• 3 Separate audio zones</li>
+                <li>• Subwoofer reinforced sound system</li>
+                <li>• Digital audio processing</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 flex items-center">
+                <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 6.343a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"/>
+                </svg>
+                Lighting Systems
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Dance lighting that moves to the beat</li>
+                <li>• Color-changing up-lighting</li>
+                <li>• Atmosphere enhancement</li>
+                <li>• Venue-appropriate scaling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="py-16 bg-black text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Make Your Event Unforgettable?</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Contact us today for a personalized quote. We typically respond within 24 hours.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/contact" 
+              className="inline-block bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            >
+              Get Your Quote
+            </Link>
+            <a 
+              href="tel:206-851-0003" 
+              className="inline-block border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors duration-200"
+            >
+              Call 206-851-0003
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
